@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  color: whitesmoke;
+  background: #56a3f6;
+  user-select: none;
+}
+.logo {
+  font-size: 3rem;
+}
+header p {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  background: #a6d1ff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: #56a3f6;
+  user-select: none;
+}
+
+.sentence {
+  text-align: center;
+  width: 60%;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  color: whitesmoke;
+  font-size: 2rem;
+  background: hsla(232, 100%, 55%, 1);
+  font-family: "Montserrat", sans-serif;
+}
+
+.text {
+  letter-spacing: 2px;
+  font-style: italic;
+}
+.text::before {
+  content: open-quote;
+}
+
+.text::after {
+  content: close-quote;
+}
+
+.sentence.hidden {
+  display: none;
+}
+
+.random-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5em 2em;
+  border-radius: 2rem;
+  color: whitesmoke;
+  background: hsla(232, 100%, 55%, 1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.random-btn:active {
+  transform: scale(0.9);
+}
